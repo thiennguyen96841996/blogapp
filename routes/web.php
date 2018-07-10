@@ -51,3 +51,6 @@ Route::group(array('prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 
 	Route::get('categories/create', 'CategoriesController@create');
 	Route::post('categories/create', 'CategoriesController@store');
 });
+Route::get('/', 'PagesController@home');
+Route::get('/about', 'PagesController@about');
+Route::get('/contact', 'PagesController@contact');
